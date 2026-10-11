@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Secure Contact Directory</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Secure Contact Directory</h1>
+    <p>Add a contact and view saved contacts. This classroom example uses JavaScript, PHP, and SQLite.</p>
+    <form id="contact-form">
+      <label for="name">Name</label>
+      <input id="name" name="name" maxlength="80" required>
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" maxlength="254" required>
+      <button type="submit">Save contact</button>
+    </form>
+    <p id="message" role="status" aria-live="polite"></p>
+    <h2>Saved contacts</h2>
+    <button id="refresh" type="button">Refresh list</button>
+    <ul id="contacts"></ul>
+  </main>
+  <script src="app.js" defer></script>
+</body>
+</html>
